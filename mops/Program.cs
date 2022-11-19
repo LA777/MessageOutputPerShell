@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace mops
 {
@@ -23,6 +24,7 @@ namespace mops
             }
 
             MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            Console.WriteLine($"Message shown! Message: {message}; Caption: {caption}");
         }
     }
 }
